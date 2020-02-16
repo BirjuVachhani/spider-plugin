@@ -1,0 +1,30 @@
+<idea-plugin>
+    <id>dev.birjuvachhani.spider</id>
+    <name>Spider</name>
+    <vendor email="brvachhani@gmail.com" url="http://birjuvachhani.dev">Birju Vachhani</vendor>
+
+    <description><![CDATA[
+    A small dart command-line tool for generating dart references of assets from the assets folder.
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="MyPlugin.TopMenu"
+               text="_MyPlugin"
+               description="MyPlugin toolbar menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="MyAction"
+                    class="actions.MyAction"
+                    text="_MyAction"
+                    description="MyAction"/>
+        </group>
+    </actions>
+</idea-plugin>
