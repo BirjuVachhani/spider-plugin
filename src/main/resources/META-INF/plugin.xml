@@ -17,14 +17,18 @@
 
     <actions>
         <!-- Add your actions here -->
-        <group id="MyPlugin.TopMenu"
-               text="_MyPlugin"
-               description="MyPlugin toolbar menu">
+        <group id="Spider.TopMenu"
+               text="Spider"
+               description="Spider toolbar menu">
             <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="MyAction"
-                    class="actions.MyAction"
-                    text="_MyAction"
-                    description="MyAction"/>
+            <action id="CreateConfigAction"
+                    class="actions.CreateConfigAction"
+                    text="Create Configuration"
+                    description="Creates configuration file for spider"/>
+            <action id="VersionAction"
+                    class="actions.VersionAction"
+                    text="Version"
+                    description="Prints spider version"/>
         </group>
     </actions>
 </idea-plugin>

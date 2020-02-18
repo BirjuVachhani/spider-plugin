@@ -21,6 +21,7 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version '2019.3.3'
+//    alternativeIdePath 'C:\\Program Files\\Android\\Android Studio'
 }
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
